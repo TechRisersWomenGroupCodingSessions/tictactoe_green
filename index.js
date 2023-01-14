@@ -29,6 +29,13 @@ const game = {
 			this.playerO.includes(gameSquare) || this.playerX.includes(gameSquare)
 		);
 	},
+
+	startGame() {
+		this.playerO = [];
+		this.playerX = [];
+		this.entries = 0;
+		gameOver = false;
+	}
 };
 
 module.exports = game;
