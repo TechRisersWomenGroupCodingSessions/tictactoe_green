@@ -25,8 +25,8 @@ const game = {
 	},
 
 	squareOpen(gameSquare) {
-		return (
-			!this.playerO.includes(gameSquare) && !this.playerX.includes(gameSquare)
+		return !(
+			this.playerO.includes(gameSquare) || this.playerX.includes(gameSquare)
 		);
 	},
 };
